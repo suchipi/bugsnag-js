@@ -1,6 +1,6 @@
 {
   "name": "@suchipi/bugsnag-plugin-window-unhandled-rejection",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "main": "unhandled-rejection.dist.js",
   "description": "@bugsnag/js plugin to report unhandled promise rejections in browsers",
   "homepage": "https://www.bugsnag.com/",
