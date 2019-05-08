@@ -1,6 +1,6 @@
 {
   "name": "@suchipi/bugsnag-plugin-window-unhandled-rejection",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "main": "unhandled-rejection.dist.js",
   "description": "@bugsnag/js plugin to report unhandled promise rejections in browsers",
   "homepage": "https://www.bugsnag.com/",
@@ -19,17 +19,18 @@
   ],
   "scripts": {
     "test": "nyc --reporter=lcov -- jasmine '!(node_modules)/**/*.test.js'",
-    "build": "rollup -c rollup.config.js -i unhandled-rejection.js -o unhandled-rejection.dist.js"
+    "build": "rollup -c rollup.config.js -i unhandled-rejection.js -o unhandled-rejection.rolled.js && babel unhandled-rejection.rolled.js -o unhandled-rejection.dist.js"
   },
   "author": "Bugsnag",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@bugsnag/core": "^5.0.0",
     "jasmine": "^3.1.0",
     "nyc": "^12.0.2",
     "rollup": "^1.11.3",
-    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^4.2.3"
