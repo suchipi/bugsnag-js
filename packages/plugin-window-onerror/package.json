@@ -1,12 +1,12 @@
 {
-  "name": "@bugsnag/plugin-window-onerror",
-  "version": "5.0.0",
+  "name": "@suchipi/bugsnag-plugin-window-onerror",
+  "version": "5.0.1",
   "main": "onerror.js",
   "description": "@bugsnag/js plugin to report unhandled exceptions in browsers",
   "homepage": "https://www.bugsnag.com/",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bugsnag/bugsnag-js.git"
+    "url": "git@github.com:suchipi/bugsnag-js.git"
   },
   "publishConfig": {
     "access": "public"
