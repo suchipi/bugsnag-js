@@ -7,8 +7,7 @@ module.exports = {
     function onerror (messageOrEvent, url, lineNo, charNo, error) {
       // Ignore errors with no info due to CORS settings
       if (lineNo === 0 && /Script error\.?/.test(messageOrEvent)) {
-        client._logger.warn('Ignoring cross-domain or eval script error. See docs: https://tinyurl.com/y94fq5zm')
-        return
+        messageOrEvent = "Unhandled script error - This is usually a script parse error."
       }
 
       // any error sent to window.onerror is unhandled and has severity=error
